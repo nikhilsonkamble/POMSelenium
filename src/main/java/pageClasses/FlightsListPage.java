@@ -16,7 +16,7 @@ public class FlightsListPage extends PageBaseClass {
 	public void checkPageLoading() {
 		try {
 			Assert.assertEquals(driver.getTitle(),
-					"Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | SpiceJet Airlines Nikhil");
+					"Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | SpiceJet Airlines");
 			logger.log(Status.PASS, "Flights list page opened");
 		} catch (AssertionError e) {
 			logger.log(Status.FAIL, "Flights list page not opened " + e.getMessage());

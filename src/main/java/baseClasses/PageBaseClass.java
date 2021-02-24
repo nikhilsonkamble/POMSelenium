@@ -2,10 +2,7 @@ package baseClasses;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import pageClasses.LandingPage;
@@ -21,7 +18,7 @@ public class PageBaseClass extends TestBaseClass {
 		try {
 			// String title = driver.getTitle().trim();
 			Assert.assertEquals(driver.getTitle().trim(),
-					"SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets Nikhil");
+					"SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets");
 		} catch (AssertionError e) {
 			logger.log(Status.FAIL, e.getMessage());
 			Assert.fail(e.getMessage());
