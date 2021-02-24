@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28753" started-at="2021-02-24T12:18:05 IST" finished-at="2021-02-24T12:18:34 IST">
+  <suite name="Default suite" duration-ms="39825" started-at="2021-02-24T12:44:12 IST" finished-at="2021-02-24T12:44:52 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28753" started-at="2021-02-24T12:18:05 IST" finished-at="2021-02-24T12:18:34 IST">
+    <test name="Default test" duration-ms="39825" started-at="2021-02-24T12:44:12 IST" finished-at="2021-02-24T12:44:52 IST">
       <class name="testClasses.TicketBookingTest">
-        <test-method status="PASS" signature="checkFlights(java.util.TreeMap)[pri:1, instance:testClasses.TicketBookingTest@9225652]" name="checkFlights" duration-ms="22689" started-at="2021-02-24T12:18:06 IST" data-provider="getCheckFlightsData" finished-at="2021-02-24T12:18:29 IST">
+        <test-method status="PASS" signature="checkFlights(java.util.TreeMap)[pri:1, instance:testClasses.TicketBookingTest@654f0d9c]" name="checkFlights" duration-ms="37908" started-at="2021-02-24T12:44:13 IST" data-provider="getCheckFlightsData" finished-at="2021-02-24T12:44:51 IST">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFlights -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClasses.TicketBookingTest@9225652]" name="tearDown" is-config="true" duration-ms="5299" started-at="2021-02-24T12:18:29 IST" finished-at="2021-02-24T12:18:34 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testClasses.TicketBookingTest@654f0d9c]" name="tearDown" is-config="true" duration-ms="1159" started-at="2021-02-24T12:44:51 IST" finished-at="2021-02-24T12:44:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

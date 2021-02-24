@@ -11,7 +11,7 @@ public class ExtentReportManager {
 		if (report == null) {
 			String reportName = DateUtil.getTimeStamp() + ".html";
 			ExtentSparkReporter htmlReporter = new ExtentSparkReporter(
-					System.getProperty("user.dir") + "/test-output/reports/" + reportName);
+					System.getProperty("user.dir") + "/test-output/extentReports/" + reportName);
 			report = new ExtentReports();
 			report.attachReporter(htmlReporter);
 
