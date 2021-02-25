@@ -8,11 +8,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.aventstack.extentreports.Status;
 
 import baseClasses.PageBaseClass;
+import baseClasses.TopMenuClass;
 
 public class LandingPage extends PageBaseClass {
+	TopMenuClass topMenu;
 
 	public LandingPage(WebDriver driver) {
 		super(driver);
+		topMenu = new TopMenuClass(driver);
+		PageFactory.initElements(driver, topMenu);
 	}
 
 	@FindBy(xpath = "//div[@id='header']//a[@title='SpiceJet']")
@@ -69,6 +73,10 @@ public class LandingPage extends PageBaseClass {
 		findFlights_button.click();
 		logger.log(Status.INFO, "Find flights button clicked");
 		return PageFactory.initElements(driver, FlightsListPage.class);
+	}
+
+	public TopMenuClass getTopMenu() {
+		return topMenu;
 	}
 
 }

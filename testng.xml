@@ -4,7 +4,8 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="testClasses.TicketBookingTest" />
-			<!-- <class name="baseClasses.TestBaseClass"/> -->
+			<class name="testClasses.SpiceScreenTest" />
+			<!-- <class name="baseClasses.TestBaseClass" /> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

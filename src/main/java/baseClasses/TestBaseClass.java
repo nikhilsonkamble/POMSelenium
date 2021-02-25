@@ -34,6 +34,6 @@ public class TestBaseClass {
 	@AfterMethod
 	public void tearDown() {
 		report.flush();
-		driver.close();
+		driver.quit();
 	}
 }
