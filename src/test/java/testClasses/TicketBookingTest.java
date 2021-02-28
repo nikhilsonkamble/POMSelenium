@@ -18,8 +18,7 @@ public class TicketBookingTest extends TestBaseClass {
 
 	@Test(dataProvider = "getCheckFlightsData", priority = 1)
 	public void checkFlights(TreeMap<String, String> testData) {
-		openBrowser();
-		logger = report.createTest("Flight check Test");
+		setup("Flight check Test");
 		pageBaseClass = new PageBaseClass(driver);
 		landingPage = pageBaseClass.openApplicationURL();
 		landingPage.clickDeparturecity();
@@ -36,10 +35,9 @@ public class TicketBookingTest extends TestBaseClass {
 		return TestDataProvider.getTestData("SpiceJet.xlsx", "Booking", "FlightCheck");
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2)
 	public void testTestCase() {
-		openBrowser();
-		logger = report.createTest("test Test case");
+		setup("test Test case");
 		pageBaseClass = new PageBaseClass(driver);
 		landingPage = pageBaseClass.openApplicationURL();
 		landingPage.clickDeparturecity();

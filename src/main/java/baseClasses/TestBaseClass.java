@@ -7,7 +7,9 @@ import org.testng.annotations.AfterMethod;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ExtentReportManager;
 
 public class TestBaseClass {
@@ -23,9 +25,22 @@ public class TestBaseClass {
 	 * ChromeDriver(); driver.manage().window().maximize(); wait = new
 	 * WebDriverWait(driver, 10); }
 	 */
-	public void openBrowser() {
-		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + "/src/main/java/utilities/drivers/chromedriver.exe");
+    /**
+     * Initializes WebDriver(driver), ExtentTest(logger) and WebDriverWait object
+     * 
+     * @param reportName
+     *            Name of extent report that will be created after the execution of the test
+     * 
+     * @return void
+     */
+	public void setup(String reportName) {
+		logger = report.createTest(reportName);
+		WebDriverManager.chromedriver().setup();
+		logger.generateLog(Status.INFO, "Chrome launched with bonigracia");
+		/*
+		 * System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
+		 * + "/src/main/java/utilities/drivers/chromedriver.exe");
+		 */
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		wait = new WebDriverWait(driver, 10);

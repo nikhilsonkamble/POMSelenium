@@ -17,8 +17,7 @@ public class SpiceScreenTest extends TestBaseClass {
 
 	@Test
 	public void openFacebookPage() {
-		openBrowser();
-		logger = report.createTest("Opening Facebook Page from SpiceJet landing page");
+		setup("Opening Facebook Page from SpiceJet landing page");
 		pageBaseClass = new PageBaseClass(driver);
 		landingPage = pageBaseClass.openApplicationURL();
 		topMenu = landingPage.getTopMenu();

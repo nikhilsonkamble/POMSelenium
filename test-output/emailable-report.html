@@ -9,11 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">51,048</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">127,921</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testClasses.SpiceScreenTest</td><td><a href="#m0">openFacebookPage</a></td><td rowspan="1">1614232513622</td><td rowspan="1">17941</td></tr><tr class="passedodd"><td rowspan="1">testClasses.TicketBookingTest</td><td><a href="#m1">checkFlights</a></td><td rowspan="1">1614232481743</td><td rowspan="1">30848</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testClasses.TicketBookingTest</td><td><a href="#m0">checkFlights</a></td><td rowspan="1">1614255198044</td><td rowspan="1">37219</td></tr><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">testClasses.TicketBookingTest</td><td><a href="#m1">checkFlights</a></td><td rowspan="2">1614255126363</td><td rowspan="2">30827</td></tr><tr class="retriedeven"><td><a href="#m2">checkFlights</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testClasses.SpiceScreenTest</td><td><a href="#m3">openFacebookPage</a></td><td rowspan="1">1614255236151</td><td rowspan="1">16499</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testClasses.SpiceScreenTest#openFacebookPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testClasses.TicketBookingTest#checkFlights</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{DepartDate=22-02-2021, FromCity=Pune, ReturnDate=22-02-2021, RunTestCase=Yes, ToCity=Goa}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testClasses.TicketBookingTest#checkFlights</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{DepartDate=22-02-2021, FromCity=Pune, ReturnDate=22-02-2021, RunTestCase=Yes, ToCity=Goa}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | SpiceJet Airlines nikhil] but found [Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | SpiceJet Airlines]
+	at pageClasses.FlightsListPage.checkPageLoading(FlightsListPage.java:23)
+	at testClasses.TicketBookingTest.checkFlights(TicketBookingTest.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testClasses.SpiceScreenTest#openFacebookPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
